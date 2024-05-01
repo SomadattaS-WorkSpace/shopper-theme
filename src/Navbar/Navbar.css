@@ -1,0 +1,38 @@
+nav{
+    border: 1px solid blue;
+    width: 100%;
+    height: 150px;
+    
+}
+.nav1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(247, 246, 246);
+    align-items: center;
+}
+.nav-elements,.nav-shiping,.nav-social{
+    display: flex;
+    gap: 20px;
+}
+.nav-social a{
+    color: rgb(199, 198, 198);
+}
+.nav-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.nav-elements p{
+    text-align: center;
+    justify-content: center;
+}
+.dropdown button{
+    border: none;
+    background-color: rgb(247, 246, 246);
+}
+.dropdown-menu li{
+    padding: 5px;
+    
+}
