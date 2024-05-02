@@ -1,4 +1,5 @@
-import "./Navbar.css";
+import "../Navbar/Navbar.css";
+import { getImageUrl } from "../../utils";
 
 export const Navbar = () => {
     return (
@@ -8,12 +9,17 @@ export const Navbar = () => {
                     <div className="bi bi-truck" />
                     <p>FREE SHIPPING WORLDWIDE</p>
 
-                    <div class="dropdown">
-                        <button class="dropdown-toggle" data-bs-toggle="dropdown" >Language</button>
-                        <ul class="dropdown-menu">
-                            <li><div className="country-img"/><a class="dropdown-item" type="button">United State</a></li>
-                            <li><div className="country-img"/><a class="dropdown-item" type="button">Germany</a></li>
-                            <li><div className="country-img"/><a class="dropdown-item" type="button">India</a></li>
+                    <div className="dropdown">
+                        <button className="dropdown-toggle" data-bs-toggle="dropdown" >Language</button>
+                        <ul className="dropdown-menu">
+                            <li>
+                                <div className="usa-img">
+                                    <img src={getImageUrl("country/USA.jpg")} alt="USA-image" />
+                                </div>
+                                <a className="dropdown-item" type="button">United State</a>
+                            </li>
+                            <li><div className="gny-img"> <img src={getImageUrl('country/GNY.png')} alt="GNY-image" /> </div> <a className="dropdown-item" type="button">Germany</a></li>
+                            <li><div className="ind-img"> </div> <a className="dropdown-item" type="button">India</a></li>
                         </ul>
                     </div>
                 </div>
